@@ -21,6 +21,10 @@ module.exports = {
         type: Sequelize.STRING(200),
         field: 'url_image',
       },
+      description: {
+        allowNull: false,
+        type: Sequelize.STRING(500),
+      },
     });
   },
   down: async (queryInterface, _Sequelize) => {
