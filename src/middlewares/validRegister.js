@@ -2,7 +2,7 @@ const Joi = require('joi');
 const invalidData = require('../utils/invalidData');
 
 const BAD_REQUEST = 400;
-const NAME_LENGTH_MIN = 12;
+const NAME_LENGTH_MIN = 3;
 const PASS_LENGTH_MIN = 6;
 
 const validRegister = (req, _res, next) => {

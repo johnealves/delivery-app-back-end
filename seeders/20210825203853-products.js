@@ -58,12 +58,6 @@ module.exports = {
         description: "Burguer de carne Angus, Smash burguer (prensado na chapa) 100g, cheddar, pão brioche artesanal, maionese de bacon, alface e tomate fresquinho"
       },
       {
-        name: 'Slash',
-        price: 17.97,
-        url_image: 'https://john-delivery-app.herokuapp.com/images/slash.jpg',
-        description: "Burguer de carne Angus, Smash burguer (prensado na chapa) 100g, cheddar, pão brioche artesanal, maionese de bacon, alface e tomate fresquinho"
-      },
-      {
         name: 'Anéis de cebola empanados',
         price: 13.97,
         url_image: 'https://john-delivery-app.herokuapp.com/images/aneis-de-cebola.jpg',

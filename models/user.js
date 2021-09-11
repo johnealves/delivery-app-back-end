@@ -8,6 +8,8 @@ module.exports = (sequelize, DataTypes) => {
 
   User.associate = (models) => {
     User.hasMany(models.Sale);
+
+    User.hasMany(models.Address)
   }
 
   return User;
