@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     price: DataTypes.DECIMAL(4, 2),
     urlImage: DataTypes.STRING(200),
     description: DataTypes.STRING(500),
-  }, { tableName: 'products', underscored: true });
+  }, { tableName: 'products', underscored: true, timestamps: false });
 
   Product.associate = (models) => {
     Product.belongsToMany(models.Sale, {
