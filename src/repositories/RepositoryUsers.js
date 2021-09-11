@@ -1,7 +1,12 @@
-const { User } = require('../../models');
+const { User, Address } = require('../../models');
 
 const getByUser = async ({ email, password }) => {
-  const findUser = await User.findOne({ where: { email, password } });
+  const findUser = await User.findOne({ 
+    where: { email, password },
+    include: [
+      { model: Address, as: 'address' },
+    ],
+  });
 
   return findUser;
 };

@@ -7,8 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     district: DataTypes.STRING(45),
     city: DataTypes.STRING(45),
     cep: DataTypes.INTEGER(),
-    createdAt: DataTypes.DATE,
-    updatedAt: DataTypes.DATE,
+    // createdAt: DataTypes.DATE,
+    // updatedAt: DataTypes.DATE,
   }, { 
     tableName: 'address',
     underscored: true,
