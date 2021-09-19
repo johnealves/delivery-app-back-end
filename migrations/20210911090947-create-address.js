@@ -19,7 +19,7 @@ module.exports = {
         onUpdate: 'CASCADE',
         field: 'user_id',
       },
-      Street: {
+      street: {
         type: Sequelize.STRING
       },
       number: {

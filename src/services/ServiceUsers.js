@@ -36,6 +36,13 @@ const register = async ({ name, email, password, role }) => {
   return userWithoutPasswordAndEmail;
 };
 
+const getUserById = async ({ id }) => {
+  const user = await RepositoryUsers.getUserById({ id });
+  const { password: passBD, email: emailBD, ...userWithoutPasswordAndEmail } = user;
+
+  return userWithoutPasswordAndEmail
+}
+
 const getAllUsers = async () => {
   const users = await RepositoryUsers.getAllUsers();
 
@@ -51,6 +58,7 @@ const getAllSellers = async () => {
 module.exports = {
   login,
   register,
+  getUserById,
   getAllUsers,
   getAllSellers,
 };

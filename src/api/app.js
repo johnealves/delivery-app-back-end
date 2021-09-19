@@ -20,6 +20,7 @@ app.use(cors());
 app.use('/', routes.RouteUser);
 app.use('/', routes.RouteProduct);
 app.use('/', routes.RouteSale);
+app.use('/', routes.RouteAddress);
 
 app.use(express.static(path.resolve(__dirname, '..', '..', 'public')));
 

@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Address = sequelize.define('Address', {
     userId: DataTypes.INTEGER,
-    Street: DataTypes.STRING(255),
+    street: DataTypes.STRING(255),
     number: DataTypes.INTEGER(),
     complement: DataTypes.STRING(15),
     district: DataTypes.STRING(45),

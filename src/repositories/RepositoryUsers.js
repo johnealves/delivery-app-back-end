@@ -11,6 +11,17 @@ const getByUser = async ({ email, password }) => {
   return findUser;
 };
 
+const getUserById = async ({ id }) => {
+  const findUser = await User.findOne({ 
+    where: { id },
+    include: [
+      { model: Address, as: 'address' },
+    ],
+  });
+  console.log(findUser)
+  return findUser.dataValues;
+};
+
 const getAllUsers = async () => {
   const users = await User.findAll({
     attributes: { exclude: ['password'] },
@@ -48,6 +59,7 @@ const create = async ({ name, email, password, role }) => {
 
 module.exports = {
   getByUser,
+  getUserById,
   getByEmail,
   getByName,
   create,

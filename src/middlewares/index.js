@@ -4,18 +4,14 @@ const validRegisterAdmin = require('./validRegisterAdmin');
 const createToken = require('./createToken');
 const validLogin = require('./validLogin');
 const validJWT = require('./validJWT');
-// const validCategory = require('./validCategory');
-// const validPost = require('./validPost');
-// const validUpdatePost = require('./validUpdatePost');
+const validAddress = require('./validAddress');
 
 module.exports = {
   validRegisterAdmin,
   errorMiddlewares,
   validRegister,
+  validAddress,
   createToken,
   validLogin,
   validJWT,
-  // validCategory,
-  // validPost,
-  // validUpdatePost,
 };
